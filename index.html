@@ -1,271 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
-</head>
-<style>
+  </head>
+  <style>
     /* Reset some basic styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-/* This is a comment */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    /* This is a comment */
+    header {
+      width: 100%;
+    }
 
-body {
+    /* Top Bar Styling */
+    .top-bar {
+      background-color: #003366;
+      color: #ffffff;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .left-info,
+    .right-info {
+      display: flex;
+      align-items: center;
+    }
+
+    .time,
+    .phone {
+      font-size: 14px;
+      margin-right: 15px;
+    }
+
+    .social-icons a {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 16px;
+      margin: 0 5px;
+    }
+
+    /* Navbar Styling */
+    .navbar {
+      background-color: rgba(0, 0, 0, 0.6);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+    }
+
+    .logo {
+      color: #ffffff;
+      font-size: 34px;
+    }
+
+    .nav-links {
+      list-style-type: none;
+      display: flex;
+    }
+
+    .nav-links li {
+      margin-left: 20px;
+    }
+
+    .nav-links a {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 16px;
+      position: relative;
+    }
+
+    /* Underline effect */
+    .nav-links a::after {
+      content: "";
+      display: block;
+      width: 0;
+      height: 2px;
+      background: #ffffff;
+      transition: width 0.3s;
+    }
+
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+
+    /* Reset some basic styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* body {
     font-family: Arial, sans-serif;
-}
+} */
 
-header {
-    width: 100%;
-}
+    header {
+      width: 100%;
+    }
 
-/* Top Bar Styling */
-.top-bar {
-    background-color: #003366;
-    color: #ffffff;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+    /* Top Bar Styling */
+    .top-bar {
+      background-color: #003366;
+      color: #ffffff;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
 
-.left-info, .right-info {
-    display: flex;
-    align-items: center;
-    
-}
+    .left-info,
+    .right-info {
+      display: flex;
+      align-items: center;
+    }
 
-.time, .phone {
-    font-size: 14px;
-    margin-right: 15px;
-}
+    .time,
+    .phone {
+      font-size: 14px;
+      margin-right: 15px;
+    }
 
-.social-icons a {
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 16px;
-    margin: 0 5px;
-}
+    .social-icons a {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 16px;
+      margin: 0 5px;
+    }
 
-/* Navbar Styling */
-.navbar {
-    background-color: rgba(0, 0, 0, 0.6);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 30px;
-}
+    /* Navbar Styling */
+    .navbar {
+      background-color: rgba(0, 0, 0, 0.6);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+    }
 
-.logo {
-    color: #ffffff;
-    font-size: 34px;
-}
+    .logo {
+      color: #ffffff;
+      font-size: 34px;
+    }
 
-.nav-links {
-    list-style-type: none;
-    display: flex;
-}
+    .nav-links {
+      list-style-type: none;
+      display: flex;
+    }
 
-.nav-links li {
-    margin-left: 20px;
-}
+    .nav-links li {
+      margin-left: 20px;
+    }
 
-.nav-links a {
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 16px;
-    position: relative;
-}
+    .nav-links a {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 16px;
+      position: relative;
+    }
 
-/* Underline effect */
-.nav-links a::after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 2px;
-    background: #ffffff;
-    transition: width 0.3s;
-}
+    /* Underline effect */
+    .nav-links a::after {
+      content: "";
+      display: block;
+      width: 0;
+      height: 2px;
+      background: #ffffff;
+      transition: width 0.3s;
+    }
 
-.nav-links a:hover::after {
-    width: 100%;
-}
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+    body {
+      background-image: url(moon-3.jpg);
+      background-size: cover;
+      font-family: Arial, sans-serif;
+    }
+    h1 {
+      font-size: 40px;
+      color: white;
+      text-align: center;
+      padding-top: 200px;
+    }
+    p {
+      color: white;
+      font-size: 20px;
 
-/* Reset some basic styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-}
-
-header {
-    width: 100%;
-}
-
-/* Top Bar Styling */
-.top-bar {
-    background-color: #003366;
-    color: #ffffff;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.left-info, .right-info {
-    display: flex;
-    align-items: center;
-    
-}
-
-.time, .phone {
-    font-size: 14px;
-    margin-right: 15px;
-}
-
-.social-icons a {
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 16px;
-    margin: 0 5px;
-}
-
-/* Navbar Styling */
-.navbar {
-    background-color: rgba(0, 0, 0, 0.6);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 30px;
-}
-
-.logo {
-    color: #ffffff;
-    font-size: 34px;
-}
-
-.nav-links {
-    list-style-type: none;
-    display: flex;
-}
-
-.nav-links li {
-    margin-left: 20px;
-}
-
-.nav-links a {
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 16px;
-    position: relative;
-}
-
-/* Underline effect */
-.nav-links a::after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 2px;
-    background: #ffffff;
-    transition: width 0.3s;
-}
-
-.nav-links a:hover::after {
-    width: 100%;
-}
-body{
-    background-image: url(moon-3.jpg);
-    background-size: cover;
-
-}
-h1{
-    font-size: 40px;
-    color: white;
-    text-align: center;
-    padding-top: 200px;
-
-
-}
-p{
-    color: white;
-    font-size: 20px;
- 
-text-align: center;
-    
-
-}
-#btn1{
-    color: white;
-    border: 1px solid white;
-    font-size: 25px;
-    width: 200px;
-    height: 50px;
-    background-color: rgba(255, 99, 71, 0);
-    vertical-align: middle;
-    margin-left: 450px;
-
-}
-#btn2{
-    color: white;
-    border: 1px solid white;
-    font-size: 25px;
-    width: 200px;
-    height: 50px;
-    background-color: rgba(255, 99, 71, 0);
-    vertical-align: middle;
-    margin-left: 20px;
-}
-
-</style>
-<body>
+      text-align: center;
+    }
+    #btn1 {
+      color: white;
+      border: 1px solid white;
+      font-size: 25px;
+      width: 200px;
+      height: 50px;
+      background-color: rgba(255, 99, 71, 0);
+      vertical-align: middle;
+      margin-left: 450px;
+    }
+    #btn2 {
+      color: white;
+      border: 1px solid white;
+      font-size: 25px;
+      width: 200px;
+      height: 50px;
+      background-color: rgba(255, 99, 71, 0);
+      vertical-align: middle;
+      margin-left: 20px;
+    }
+  </style>
+  <body>
     <!-- Thid the header of the page -->
     <header>
-            <div class="top-bar">
-                <div class="left-info">
-                    <span class="time">8:00 - 9:00 Mon - Fri</span>
-                    <span class="phone">+123 456 7890 For Appointment</span>
-                </div>
-                <div class="right-info">
-                    
-                    <div class="social-icons">
-                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-            
-            <nav class="navbar">
-                <h1 class="logo">CONFER</h1>
-                <ul class="nav-links">
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">SERVICE</a></li>
-                    <li><a href="#">FEATURE</a></li>
-                    <li><a href="#">ADVISOR</a></li>
-                    <li><a href="#">REVIEW</a></li>
-                    <li><a href="#">PAGES</a></li>
-                    <li><a href="#">CONTACT</a></li>
-                </ul>
-            </nav>
-        </header>
-    
-     <h1> Fast test way to acheive succsee</h1>
-     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas voluptatibus distinctio deserunt consequuntur quisquam veniam, aperiam laudantium excepturi nihil esse iste totam, nesciunt repellendus tempora, molestiae ex rem perferendis! Amet!
+      <div class="top-bar">
+        <div class="left-info">
+          <span class="time">8:00 - 9:00 Mon - Fri</span>
+          <span class="phone">+123 456 7890 For Appointment</span>
+        </div>
+        <div class="right-info">
+          <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
 
-     </p>
-     <button id="btn1">
-         watch 
-     </button>
-     <button id="btn2"> learn more</button>
-</body>
+      <nav class="navbar">
+        <h1 class="logo">CONFER</h1>
+        <ul class="nav-links">
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">ABOUT</a></li>
+          <li><a href="#">SERVICE</a></li>
+          <li><a href="#">FEATURE</a></li>
+          <li><a href="#">ADVISOR</a></li>
+          <li><a href="#">REVIEW</a></li>
+          <li><a href="#">PAGES</a></li>
+          <li><a href="#">CONTACT</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <h1>Fast test way to acheive succsee</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas
+      voluptatibus distinctio deserunt consequuntur quisquam veniam, aperiam
+      laudantium excepturi nihil esse iste totam, nesciunt repellendus tempora,
+      molestiae ex rem perferendis! Amet!
+    </p>
+    <button id="btn1">watch</button>
+    <button id="btn2">learn more</button>
+  </body>
 </html>
